@@ -1,0 +1,72 @@
+<div class="showHamgurguer">
+  <div class="items">
+
+    <!--Bread-->
+    <img id="breadCommun" src="../../assets/paoSalUp.png" [class]="{
+      'collapse' : !breadCommun,
+      'collapse.show' : breadCommun
+     }">
+    <img id="breadTrad" src="../../assets/paoTradicionalUp.png" [class]="{
+      'collapse' : !breadTrad,
+      'collapse.show' : breadTrad
+     }">
+
+    <!--Salad-->
+    <img id="salad" src="../../assets/saladaSimples.png" [class]="{
+      'collapse' : !saladCommun,
+      'collapse.show' : saladCommun
+     }">
+    <img id="salad" src="../../assets/saladaCompleta.png" [class]="{
+      'collapse' : !saladTrad,
+      'collapse.show' : saladTrad
+     }">
+
+    <!--Meat-->
+    <img id="meatBeef" src="../../assets/carneBoi.png" [class]="{
+      'collapse' : !meatBeef,
+      'collapse.show' : meatBeef
+     }">
+    <img id="meatChicken" src="../../assets/carneFrango.png" [class]="{
+      'collapse' : !meatChicken,
+      'collapse.show' : meatChicken
+     }">
+
+    <!--Bread-->
+    <img id="bread" src="../../assets/paoSalDown.png" [class]="{
+      'collapse' : !breadCommun,
+      'collapse.show' : breadCommun
+     }">
+    <img id="breadTrad" src="../../assets/paoTradicionalDown.png" [class]="{
+      'collapse' : !breadTrad,
+      'collapse.show' : breadTrad
+     }">
+  </div>
+</div>
+
+<div class="itemList">
+
+  <button class="btn btn-danger" (click)="breadCommunChange()" [class]="{
+      'collapse' : breadView
+     }">Pao de Sal</button>
+  <button class="btn btn-danger ml-3" (click)="breadTradChange()" [class]="{
+      'collapse' : breadView
+    }">Pao Tradicional</button>
+
+  <button class="btn btn-danger" (click)="saladCommunChange()" [class]="{
+      'collapse' : !saladView
+     }">Salada Comum</button>
+  <button class="btn btn-danger ml-3" (click)="saladTradChange()" [class]="{
+      'collapse' : !saladView
+     }">Salada Completa</button>
+
+  <button class="btn btn-danger ml-3" (click)="meatBeefChange()" [class]="{
+      'collapse' : !meatView
+     }">Bife de Boi</button>
+  <button class="btn btn-danger ml-3" (click)="meatChickenChange()" [class]="{
+      'collapse' : !meatView
+     }">Bife de Frango</button>
+
+  <button class="btn btn-success finish" (click)="nextPage()" [class]="{
+    'collapse' : !successView
+   }">Finalizar</button>
+</div>

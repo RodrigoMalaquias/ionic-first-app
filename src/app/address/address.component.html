@@ -1,0 +1,71 @@
+<div class="adrressPage">
+
+  <div class="container">
+
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+
+      <div class="form-row">
+
+        <div class="form-group col xs-12 mb-3 text-light">
+
+          <label for="inputNome">Nome</label>
+          <input type="text" class="form-control" id="inputNome" name="inputNome" placeholder="Nome"  ngModel required>
+
+        </div>
+
+      </div>
+
+      <div class="form-row">
+
+        <div class="form-group col xs-6 mb-3 text-light">
+
+          <label for="inputRua">Rua</label>
+          <input type="text" class="form-control" id="inputRua" name="inputRua" placeholder="Rua" ngModel required>
+
+        </div>
+
+        <div class="form-group col xs-6 mb-3 text-light">
+
+          <label for="inputNum">Número</label>
+          <input type="text" class="form-control" id="inputNum"  name="inputNum" placeholder="Número" ngModel required>
+
+        </div>
+
+      </div>
+
+      <div class="form-row">
+
+        <div class="form-group col xs-12 mb-3 text-light">
+
+          <label for="inputPay">Forma de pagamento</label>
+          <select class="form-control" id="inputPay" name="inputPay" ngModel required>
+            <option selected>Cartão</option>
+            <option>Dinheiro</option>
+          </select>
+
+        </div>
+
+      </div>
+
+      <div class="form-content text-light text-center">
+
+        <button routerLink="/final" [disabled]="!f.valid" type="submit" class="btn btn-primary">Finalizar Pedido!</button>
+
+      </div>
+
+    </form>
+
+  </div>
+
+</div>
+<!-- <form #f = "ngForm" (ngSubmit)="onSubmit(f)">
+  <div class="form-group">
+    <label for="nome">Nome</label>
+    <input type="text" class="form-control" id="nome" name="nome" ngModel required>
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" id="email" name="email" ngModel required>
+  </div>
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form> -->
