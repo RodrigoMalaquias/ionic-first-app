@@ -2,7 +2,7 @@
 
 PROCEDIMENTO
 
-Ao abrir o editor de textos vai com o diretorio para dentro da pasta App, e depois execute no terminal Ionic serve, que irá abrir
+Ao abrir o editor de texto vai com o diretório para dentro da pasta App, e depois execute no terminal Ionic serve, que irá abrir
 uma janela no seu navegador, logo em seguida aperte F12 e escolha o smartphone de sua preferência e aproveite o aplicativo.
 
 ### Telas
